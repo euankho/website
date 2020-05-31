@@ -1,0 +1,187 @@
+body {
+  background-color: #23272a;
+  color: white;
+  text-align: center;
+  padding-top: 100px;
+}
+
+.header {
+  height: 50vh;
+  position: block;
+}
+
+.essay {
+  width: 75vw;
+  text-align: left;
+  padding-top: 10px;
+  text-indent: 50px;
+}
+
+.container {
+  margin-top: 15vh;
+  min-height: 25vh;
+  width: 50vw;
+}
+
+.container > p {
+  margin-top: 10px;
+}
+
+
+img {
+  height: 15vw;
+}
+
+.is-1 {
+  font-size: 5vw;
+}
+
+.is-3 {
+  font-size: 3vw;
+}
+
+p {
+  margin-top: -10px;
+  font-size: 1.5vw;
+}
+a.button {
+  background-color: #7289DA;
+  border-color: #7289DA;
+  opacity: 1;
+  font-size: 1.5vw;
+  margin-right: 15px;
+  animation: fade-slide 0.5s linear;
+}
+
+a.button:hover {
+  background-color: #4e5d94;
+  border-color: #4e5d94;
+}
+
+@keyframes fade-slide {
+  0% {
+    opacity: 0;
+    top: 50px;
+  }
+  50% {
+    opacity: 0.3;
+    top: 25px;
+  }
+  100% {
+    top: 0px;
+  }
+}
+
+#social {
+  margin-top: 10vh;
+  height: 50vh;
+}
+
+/*Icons*/
+
+.fa {
+  padding: 0.5vw 0px 0px 0px;
+  display: inline-block;
+  font-size: 3vw;
+  min-width: 4.5vw;
+  height: 4.5vw;
+  text-align: center;
+  text-decoration: none;
+  border-style: solid;
+  border-radius: 50%;
+  transition: all 1s;
+}
+
+.fa-twitter {
+  color: #55ACEE;
+}
+
+.fa-twitter:hover {
+  background: #55ACEE;
+  color: #ffffff;
+  border-radius: 25%;
+  border-style: solid;
+}
+
+.fa-reddit {
+  color: #ff5700;
+}
+
+.fa-reddit:hover {
+  background: #ff5700;
+  color: #ffffff;
+  border-radius: 25%;
+  border-style: solid;
+}
+
+.fa-instagram {
+  color: #125688;
+}
+
+.fa-instagram:hover {
+  background: #125688;
+  color: #ffffff;
+  border-radius: 25%;
+  border-style: solid;
+}
+
+/*tool tip*/
+
+.tooltip {
+  position: relative;
+  display: inline;
+  margin-right: 3vw;
+  border-radius: 50%;
+  border-style: none;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 7.5vw;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  padding: 1vw 0;
+  border-radius: 6px;
+  position: absolute;
+  z-index: 1;
+  bottom: 200%;
+  left: 50%;
+  margin-left: -3.5vw;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+
+.idk {
+  position: fixed;
+  width: 100%;
+  bottom: 5vh;
+}
+
+.progress-container {
+  visibility: hidden;
+  width: 80%;
+  height: 8px;
+  background: #ccc;
+  margin: auto;
+  animation: progress 2s linear;
+}
+
+/* The progress bar (scroll indicator) */
+.progress-bar {
+  height: 8px;
+  background: #7289DA;
+  width: 0%;
+}
+
+@keyframes progress {
+  0% {
+    opacity: 0;
+    top: 50px;
+  }
+  50% {
+    opacity: 0.3;
+  }
+}
